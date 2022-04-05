@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './components/Header';
+import Products from './components/Products';
 
-import { BrowserRoutes as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
