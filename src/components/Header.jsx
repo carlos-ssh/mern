@@ -1,18 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary justify-content-between">
       <div className="container">
-        <h1>urProducts</h1>
+        <h1>
+          <Link to={'/'} className="text-light">
+            urProducts
+          </Link>
+        </h1>
       </div>
-      <a
-        href="/products/new"
-        className="btn btn-outline-light"
-      >
+      <Link to={"/products/new"} className="btn btn-primary">
         Add Product &#43;
-      </a>
+      </Link>
     </nav>
   );
 }
